@@ -9,7 +9,7 @@ const data = {
       countInStock: 10,
       brand: 'Nike',
       rating: 4.5,
-      numReviews: 10,
+      numReviews: 15,
       description: 'high quality shirt',
     },
 
@@ -22,7 +22,7 @@ const data = {
       countInStock: 20,
       brand: 'Adidas',
       rating: 4.0,
-      numReviews: 10,
+      numReviews: 12,
       description: 'high quality shirt',
     },
     {
@@ -31,11 +31,11 @@ const data = {
       category: 'Pants',
       image: '/assets/p3.jpg',
       price: 25,
-      countInStock: 15,
+      countInStock: 0,
       brand: 'Nike',
       rating: 4.5,
-      numReviews: 14,
-      description: 'high quality shirt',
+      numReviews: 17,
+      description: 'high quality pant',
     },
     {
       name: 'Puma Fit Pant',
@@ -46,8 +46,8 @@ const data = {
       countInStock: 5,
       brand: 'Puma',
       rating: 4.5,
-      numReviews: 10,
-      description: 'high quality shirt',
+      numReviews: 20,
+      description: 'high quality pant',
     },
   ],
 };

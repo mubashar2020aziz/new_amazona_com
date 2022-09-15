@@ -39,3 +39,14 @@ main {
 .site-container {
   min-height: 100vh;
 }
+/* rating */
+.rating span {
+  color: #ffc000;
+}
+.btn-primary {
+  background-color: #f0c040;
+}
+/* product detail */
+.img-large {
+  max-width: 79%;
+}

@@ -23,7 +23,7 @@ function App() {
           </header>
 
           <main>
-            <Container>
+            <Container className="my-2">
               <Routes>
                 <Route
                   path="/product/:slug"
