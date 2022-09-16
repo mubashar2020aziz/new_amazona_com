@@ -50,3 +50,7 @@ main {
 .img-large {
   max-width: 79%;
 }
+/* cart */
+.img-thumbnail {
+  height: 80px;
+}
