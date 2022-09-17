@@ -54,3 +54,8 @@ main {
 .img-thumbnail {
   height: 80px;
 }
+
+/* signing form */
+.small-container {
+  max-width: 600px;
+}
