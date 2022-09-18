@@ -13,14 +13,19 @@ import { Link } from 'react-router-dom';
 import { Store } from './Store';
 import CartScreen from './screen/CartScreen';
 import SigninScreen from './screen/SigninScreen';
+import Shipping from './screen/Shipping';
+import SignupScreen from './screen/SignupScreen';
+import PaymentMethod from './screen/PaymentMethod';
 
-function App() {
+function App(props) {
   const { state, dispatch: ctxDispatch } = useContext(Store);
   const { cart, userInfo } = state;
 
   const signoutHandler = () => {
     ctxDispatch({ type: 'USER_SIGNOUT' });
     localStorage.removeItem('userInfo');
+    localStorage.removeItem('shippingAddress');
+    localStorage.removeItem('paymentMethod');
   };
   return (
     <>
@@ -79,6 +84,9 @@ function App() {
                 <Route path="/" element={<HomeScreen />} />
                 <Route path="/cart" element={<CartScreen />} />
                 <Route path="/signin" element={<SigninScreen />} />
+                <Route path="/signup" element={<SignupScreen />} />
+                <Route path="/shipping" element={<Shipping />} />
+                <Route path="/payment" element={<PaymentMethod />} />
               </Routes>
             </Container>
           </main>
