@@ -7,6 +7,7 @@ import connection from './dt/dt.mjs';
 import seedRouter from './routes/seedRoutes.mjs';
 import productRouter from './routes/productRoutes.mjs';
 import userRouter from './routes/userRoutes.mjs';
+import orderRouter from './routes/orderRoutes.mjs';
 
 connection();
 app.use(express.json());
@@ -15,6 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/seed', seedRouter);
 app.use('/api/products', productRouter);
 app.use('/api/users', userRouter);
+app.use('/api/order', orderRouter);
 
 app.use((err, req, res, next) => {
   res.status(500).send({ message: err.message });
