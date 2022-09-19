@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-header {
+/* header {
   background-color: #404040;
   padding: 1rem;
 }
@@ -15,9 +15,9 @@ header a {
   color: white;
   font-weight: bold;
   text-decoration: none;
-}
-main h2 {
-  padding: 1rem;
+} */
+main {
+  flex: 1;
 }
 .products {
   display: flex;
@@ -30,8 +30,41 @@ main h2 {
 }
 .product img {
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
 }
 .product-info {
   padding-left: 1rem;
+}
+/* footer */
+.site-container {
+  min-height: 100vh;
+}
+/* rating */
+.rating span {
+  color: #ffc000;
+}
+.btn-primary {
+  background-color: #f0c040;
+}
+/* product detail */
+.img-large {
+  max-width: 79%;
+}
+/* cart */
+.img-thumbnail {
+  height: 80px;
+}
+
+/* signing form */
+.small-container {
+  max-width: 600px;
+}
+/* checkout steps */
+.checkout-steps > div {
+  border-bottom: 0.2rem solid #f08000;
+  color: #f08000;
+}
+.checkout-steps > div.active {
+  border-bottom: 0.2rem solid green;
+  color: green;
 }
