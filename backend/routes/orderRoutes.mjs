@@ -25,6 +25,16 @@ orderRouter.post(
   })
 );
 
+//  order history
+orderRouter.get(
+  '/min',
+  isAuth,
+  expressAsyncHandler(async (req, res) => {
+    const orders = await Order.find({ user: req.user._id });
+    res.send(orders);
+  })
+);
+
 orderRouter.get(
   '/:id',
   isAuth,
