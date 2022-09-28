@@ -68,3 +68,29 @@ main {
   border-bottom: 0.2rem solid green;
   color: green;
 }
+/* sidebar */
+.navbar-brand {
+  font-weight: bold;
+}
+.side-navbar {
+  width: 240px;
+  height: 100%;
+  position: absolute;
+  left: -300px;
+  background: black;
+  transition: 0.5s;
+  z-index: 1;
+}
+.site-container {
+  transition: 0.4s;
+}
+.active-con {
+  margin-left: 240px;
+}
+.active-nav {
+  left: 0;
+}
+.btn-outline-primary {
+  background-color: #f0c040;
+  color: black;
+}

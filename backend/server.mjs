@@ -18,6 +18,10 @@ app.use('/api/products', productRouter);
 app.use('/api/users', userRouter);
 app.use('/api/order', orderRouter);
 
+app.use('/api/keys/paypal', (req, res) => {
+  res.send(process.env.PAYPAL_CLIENT_ID || 'sb');
+});
+
 app.use((err, req, res, next) => {
   res.status(500).send({ message: err.message });
 });
